@@ -1,0 +1,34 @@
+PROBLEM 1:
+
+  START
+
+  SET integer_1 and integer_2
+  SET result = integer_1 + integer_2
+  PRINT result
+
+  END
+
+PROBLEM 2:
+
+  START
+
+  SET string_array
+  SET combined_string = ""
+  For each string in string_array
+    combined_string += string
+  PRINT combined_string
+
+  END
+
+
+PROBLEM 3:
+
+  START
+
+  SET integer_array
+  SET even_array = []
+  For each integer in integer_array
+    even_array << integer if index is even
+  RETURN even_array
+
+  END
