@@ -1,4 +1,4 @@
-CHOICES = %w(Rock Paper Scissors Lizard Spock)
+CHOICES = %w(Rock Paper Scissors Lizard Spock).freeze
 
 def prompt(message)
   Kernel.puts("=> #{message}")
@@ -38,7 +38,7 @@ def winning_phrase(winner_type, loser_type)
 end
 
 prompt("Play Rock Paper Scissors!")
-score = [0,0]
+score = [0, 0]
 
 loop do
   prompt("Choose one: (R/P/S/L/SP)")
