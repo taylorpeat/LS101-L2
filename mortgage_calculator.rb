@@ -35,8 +35,9 @@ loop do
 
   monthly_int_rate = apr.to_f / 12
   loan_duration_months = loan_duration_years * 12
-  monthly_payment = loan_amt * (monthly_int_rate/100 * (1 + monthly_int_rate/100)**loan_duration_months) /
-                    ((1 + monthly_int_rate/100)**loan_duration_months - 1)
+  monthly_payment = loan_amt * (monthly_int_rate / 100 *
+                    (1 + monthly_int_rate / 100)**loan_duration_months) /
+                    ((1 + monthly_int_rate / 100)**loan_duration_months - 1)
 
   prompt(calculation_output(monthly_payment, monthly_int_rate, loan_duration_months))
 
