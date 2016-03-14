@@ -5,9 +5,9 @@ end
 def player_wins?(user_choice, computer_choice)
   case user_choice
   when computer_choice then :tie
-  when "Rock"     then computer_choice == "Scissors"
-  when "Paper"    then computer_choice == "Rock"
-  when "Scissors" then computer_choice == "Paper"
+  when "Rock"          then computer_choice == "Scissors"
+  when "Paper"         then computer_choice == "Rock"
+  when "Scissors"      then computer_choice == "Paper"
   end
 end
 
